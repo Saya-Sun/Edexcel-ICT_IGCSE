@@ -1,249 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Multifunctional Devices and Convergence</title>
+<meta charset="UTF-8">
+<title>Features of Digital Devices</title>
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <style>
-        :root {
-            --primary: #0d6efd;
-            --secondary: #00c6ff;
-        }
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        body {
-            background: #f4f7fb;
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
+<style>
+:root {
+    --primary: #007bff;
+    --secondary: #00c6ff;
+}
 
-        /* HEADER */
-        .header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            animation: fadeDown 1s ease;
-        }
+body {
+    background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+    font-family: 'Poppins', sans-serif;
+}
 
-        .header h1 {
-            font-weight: 600;
-            font-size: 2.5rem;
-        }
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
 
-        /* SECTION CARDS */
-        .section {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            transition: 0.3s;
-            animation: fadeUp 0.8s ease;
-        }
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        .section:hover {
-            transform: translateY(-5px);
-        }
+/* CARD */
+.card-custom {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--primary);
+}
 
-        h2 {
-            color: var(--primary);
-            font-weight: 600;
-        }
+.card-custom:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
 
-        /* HIGHLIGHT BOX */
-        .highlight {
-            background: #e9f2ff;
-            padding: 15px;
-            border-left: 5px solid var(--primary);
-            border-radius: 10px;
-            margin-top: 15px;
-        }
+/* EXAM TIP */
+.exam-tip {
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
 
-        /* TABLE */
-        .table thead {
-            background: var(--primary);
-            color: white;
-        }
+/* PROGRESS BAR */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: var(--primary);
+    width: 0%;
+    z-index: 2000;
+}
 
-        /* LIST ICON STYLE */
-        ul li {
-            margin-bottom: 8px;
-        }
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
 
-        /* FOOTER */
-        footer {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-        }
-
-        .footer-title {
-            font-weight: 600;
-        }
-
-        .footer-divider {
-            width: 60px;
-            height: 4px;
-            background: white;
-            margin: 15px auto;
-            border-radius: 5px;
-        }
-
-        /* ANIMATIONS */
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-    </style>
+.footer-divider {
+    width: 60px;
+    height: 4px;
+    background: white;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark px-3">
+    <span class="navbar-brand">IGCSE ICT</span>
+</nav>
+
+<!-- Header -->
 <div class="header">
-    <h1>📱 Multifunctional Devices & Convergence</h1>
-    <p class="lead">IGCSE ICT - Complete Notes for Exam Success</p>
+    <h1>💻 Features of Digital Devices</h1>
+    <p class="lead">Complete IGCSE Notes for Full Marks 🚀</p>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-4">
+<div class="row">
 
-    <!-- SMARTPHONE -->
-    <div class="section">
-        <h2>📱 What is a Smartphone?</h2>
-        <p>
-            A <strong>smartphone</strong> is a mobile phone whose primary function is communication,
-            but it can also perform many advanced tasks.
-        </p>
+<!-- CARD TEMPLATE START -->
 
-        <h5>Functions:</h5>
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>📱 1. Portability</h4>
+        <p>How easy a device is to carry.</p>
         <ul>
-            <li>📸 Camera (photos & videos)</li>
-            <li>🧭 GPS Navigation</li>
-            <li>🎧 Music Player</li>
-            <li>🎮 Gaming Device</li>
-            <li>🏃 Fitness Tracker</li>
+            <li>Small size → more portable</li>
+            <li>Light weight → easier to carry</li>
+            <li>Battery-powered → highly portable</li>
         </ul>
-
-        <div class="highlight">
-            A smartphone is a <strong>multifunctional device</strong> because it performs many tasks in one device.
+        <div class="exam-tip">
+            💡 Exam Tip: Always mention size + weight when defining portability.
         </div>
     </div>
+</div>
 
-    <!-- MULTIFUNCTIONAL DEVICE -->
-    <div class="section">
-        <h2>🔹 Multifunctional Devices</h2>
-        <p>A device that performs multiple functions.</p>
-
-        <h5>Examples:</h5>
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>⚡ 2. Performance</h4>
         <ul>
-            <li>Smartphones</li>
-            <li>Tablets</li>
-            <li>Laptops</li>
-            <li>Smartwatches</li>
+            <li>CPU speed → processing power</li>
+            <li>RAM → multitasking</li>
+            <li>SSD faster than HDD</li>
+            <li>Virtual memory used when RAM is full</li>
         </ul>
-    </div>
-
-    <!-- CONVERGENCE -->
-    <div class="section">
-        <h2>🔄 What is Convergence?</h2>
-
-        <p>
-            <strong>Convergence</strong> is when multiple technologies are combined into one device.
-        </p>
-
-        <div class="highlight">
-            Example: A smartphone combines a camera, GPS, music player, and phone.
+        <div class="exam-tip">
+            💡 Exam Tip: RAM = temporary, Storage = permanent.
         </div>
     </div>
+</div>
 
-    <!-- HYBRID -->
-    <div class="section">
-        <h2>💻 Device Convergence in Action</h2>
-
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>💾 3. Storage</h4>
         <ul>
-            <li>Laptops with touchscreens</li>
-            <li>360° foldable laptops</li>
-            <li>Tablets with keyboards</li>
+            <li>Stores data permanently</li>
+            <li>SSD (fast) vs HDD (slower)</li>
+            <li>Cloud storage available</li>
         </ul>
+    </div>
+</div>
 
-        <div class="highlight">
-            These are called <strong>hybrid devices</strong>.
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>🖥️ 4. User Interface</h4>
+        <ul>
+            <li>CLI (text-based)</li>
+            <li>GUI (visual)</li>
+            <li>Menu-driven</li>
+            <li>Voice & Gesture interfaces</li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>🌐 5. Connectivity</h4>
+        <ul>
+            <li>Wired = faster & stable</li>
+            <li>Wireless = convenient</li>
+            <li>Used for data sharing</li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>💽 6. Media Support</h4>
+        <ul>
+            <li>Supports SD, microSD, DVD</li>
+            <li>Adapters improve compatibility</li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>🔋 7. Energy Consumption</h4>
+        <ul>
+            <li>Low energy = longer battery life</li>
+            <li>Eco-friendly devices preferred</li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>🔌 8. Expansion Capability</h4>
+        <ul>
+            <li>External drives & USB devices</li>
+            <li>PC = high expandability</li>
+            <li>Phones = limited expansion</li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-6 mx-auto" data-aos="fade-up">
+    <div class="card-custom">
+        <h4>🔐 9. Security Features</h4>
+        <ul>
+            <li>Passwords & PINs</li>
+            <li>Biometric authentication</li>
+            <li>Auto-lock systems</li>
+            <li>Physical locks</li>
+        </ul>
+        <div class="exam-tip">
+            💡 Exam Tip: Always give at least 2 examples of security methods.
         </div>
     </div>
+</div>
 
-    <!-- TABLE -->
-    <div class="section">
-        <h2>📊 Comparison</h2>
-
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Device</th>
-                    <th>Features</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Smartphone</td>
-                    <td>Portable, mobile network, smaller screen</td>
-                </tr>
-                <tr>
-                    <td>Tablet</td>
-                    <td>Larger screen, sometimes no mobile network</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- KEY POINTS -->
-    <div class="section">
-        <h2>🧠 Exam Key Points</h2>
-
-        <ul>
-            <li><strong>Multifunctional device</strong> = one device, many functions</li>
-            <li><strong>Convergence</strong> = combining technologies</li>
-            <li>Smartphones = best example</li>
-            <li>Reduces need for multiple devices</li>
-            <li>Differences between devices are decreasing</li>
-        </ul>
-    </div>
-
+</div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-    <h4 class="footer-title">Created by <strong>Tr. Sun</strong></h4>
+    <h4>Created by <strong>Tr. Sun</strong></h4>
     <div class="footer-divider"></div>
     <p>
         Education is not just about exams — it is about building confidence, curiosity, and a love for learning.
     </p>
 </footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+
+window.onscroll = function() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+};
+</script>
 
 </body>
 </html>
