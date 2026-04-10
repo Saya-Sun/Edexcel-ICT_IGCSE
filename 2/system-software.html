@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Software - IGCSE ICT</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #eef2f3, #dfe9f3);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            color: #2c5364;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            border-radius: 30px;
+            padding: 8px 18px;
+        }
+
+        .footer {
+            background: #0f2027;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>⚙️ SYSTEM SOFTWARE</h1>
+    <p>Detailed IGCSE ICT Notes | Full Explanation for Exam Success</p>
+</div>
+
+<div class="container my-5">
+
+    <!-- INTRO -->
+    <div class="card p-4">
+        <h3 class="section-title">🧠 Definition</h3>
+        <p>
+            System software consists of programs designed to maintain and operate a computer system.
+            It acts as a bridge between hardware and application software, ensuring the computer functions correctly.
+        </p>
+    </div>
+
+    <!-- UTILITY SOFTWARE -->
+    <div class="card p-4">
+        <h3 class="section-title">🛠️ A. Utility Software</h3>
+        <p>
+            Utility software is a type of system software that performs maintenance and optimisation tasks
+            to keep a computer running efficiently.
+        </p>
+
+        <h5>1. 💾 Backup</h5>
+        <p>
+            Backup utilities create copies of files and programs. These backups can be automatic or manual.
+        </p>
+        <ul>
+            <li>Protects against data loss</li>
+            <li>Useful after system failure or virus attack</li>
+            <li>Types: Full, Incremental, Differential</li>
+        </ul>
+
+        <div class="alert alert-info">
+            Backups are usually scheduled when the system is not in use.
+        </div>
+
+        <h5>2. 🧩 Defragmentation</h5>
+        <p>
+            Data on a hard disk can become fragmented, meaning parts of a file are stored in different locations.
+        </p>
+        <ul>
+            <li>Slows down data access</li>
+            <li>Defragmentation reorganises data into proper order</li>
+            <li>Improves system speed</li>
+        </ul>
+
+        <div class="alert alert-warning">
+            Mostly required for HDDs, not SSDs.
+        </div>
+
+        <h5>3. 🗜️ Compression</h5>
+        <p>
+            Compression reduces file size by removing repeated patterns of data.
+        </p>
+
+        <pre>a8b6c2 (example of compressed data)</pre>
+
+        <ul>
+            <li>Saves storage space</li>
+            <li>Makes file transfer faster</li>
+            <li>Requires decompression before use</li>
+        </ul>
+
+        <h5>4. 💽 Formatting</h5>
+        <p>
+            Formatting prepares a storage device for use by setting up a file system.
+        </p>
+
+        <ul>
+            <li>Deletes all data on the disk</li>
+            <li>Allows user to choose file system</li>
+            <li>Used for new or reused drives</li>
+        </ul>
+
+        <div class="alert alert-danger">
+            ⚠️ Formatting permanently removes data. Be careful!
+        </div>
+    </div>
+
+    <!-- OS -->
+    <div class="card p-4">
+        <h3 class="section-title">🖥️ B. Operating System (OS)</h3>
+
+        <p>
+            The operating system allows the user to control and manage the computer’s hardware and software.
+        </p>
+
+        <h5>Types of OS</h5>
+        <ul>
+            <li>Single-user operating systems</li>
+            <li>Network operating systems</li>
+        </ul>
+
+        <div class="alert alert-info">
+            Network OS can manage multiple users and shared resources.
+        </div>
+    </div>
+
+    <!-- FUNCTIONS -->
+    <div class="card p-4">
+        <h3 class="section-title">⚙️ Functions of Operating System</h3>
+
+        <h5>1. 🧠 Memory Management</h5>
+        <p>
+            Allocates RAM to applications and frees it when not needed. Also manages virtual memory.
+        </p>
+
+        <h5>2. ⚙️ Resource Management</h5>
+        <p>
+            Allocates system resources such as CPU and printers. Uses queues if resources are busy.
+        </p>
+
+        <h5>3. 🔐 Security</h5>
+        <p>
+            Provides authentication using passwords, biometrics, or access cards. Includes firewalls.
+        </p>
+
+        <h5>4. 🖨️ Print Spooling</h5>
+        <p>
+            Stores print jobs in a queue and sends them to the printer one at a time.
+        </p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="text-center">
+        <a href="software.html" class="btn btn-primary btn-custom m-2">⬅ Back to Software</a>
+        <a href="application-software.html" class="btn btn-success btn-custom m-2">Next: Application Software ➡</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Made with ❤️ by Tr Sun | Supporting Students for IGCSE Success</p>
+</div>
+
+</body>
+</html>
