@@ -1,120 +1,198 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IGCSE ICT Course</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+```
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <style>
-        body { background-color: #f4f6f9; }
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        .hero {
-            background: linear-gradient(135deg, #0d6efd, #6610f2);
-            color: white;
-            padding: 90px 20px;
-            text-align: center;
-        }
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(120deg, #eef2ff, #f8fbff);
+        overflow-x: hidden;
+    }
 
-        .unit-card {
-            border-radius: 15px;
-            transition: 0.3s;
-        }
+    /* HERO */
+    .hero {
+        background: linear-gradient(270deg, #0d6efd, #6610f2, #20c997);
+        background-size: 600% 600%;
+        animation: gradientMove 10s ease infinite;
+        color: white;
+        padding: 110px 20px;
+        text-align: center;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
 
-        .unit-card:hover {
-            transform: translateY(-8px);
-        }
+    @keyframes gradientMove {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
 
-        .chapter-link {
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            border-radius: 8px;
-            color: #333;
-        }
+    .hero h1 {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
 
-        .chapter-link:hover {
-            background: #e9ecef;
-        }
+    .hero p {
+        opacity: 0.9;
+    }
 
-        footer {
-            background: #212529;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
-    </style>
+    /* CARD STYLE */
+    .unit-card {
+        border-radius: 20px;
+        background: rgba(255,255,255,0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,0.3);
+        transition: 0.35s;
+    }
+
+    .unit-card:hover {
+        transform: translateY(-12px) scale(1.03);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    }
+
+    .unit-title {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    /* CHAPTER LINKS */
+    .chapter-link {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 14px;
+        margin-bottom: 10px;
+        border-radius: 12px;
+        color: #333;
+        transition: 0.25s;
+    }
+
+    .chapter-link:hover {
+        background: linear-gradient(90deg,#e3f2fd,#f1f8ff);
+        transform: translateX(6px);
+    }
+
+    .chapter-link i {
+        opacity: 0.7;
+    }
+
+    /* FOOTER */
+    footer {
+        background: linear-gradient(135deg, #212529, #343a40);
+        color: white;
+        padding: 25px;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    /* SMALL ANIMATION */
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+```
+
 </head>
 
 <body>
 
-<!-- Hero -->
+<!-- HERO -->
+
 <section class="hero">
-    <h1 class="fw-bold">IGCSE ICT</h1>
-    <p class="lead">Interactive Learning Platform for Students</p>
+    <h1>IGCSE ICT</h1>
+    <p class="lead">Interactive Learning Platform</p>
+    <p>Designed by <strong>Tr. Sun</strong></p>
 </section>
 
 <div class="container my-5">
 
-    <div class="row g-4">
+```
+<div class="row g-4 fade-in">
 
-        <!-- UNIT 1 -->
-        <div class="col-md-6">
-            <div class="card shadow p-4 unit-card">
-                <h4><i class="bi bi-cpu"></i> UNIT 1: DIGITAL DEVICES</h4>
+    <!-- UNIT 1 -->
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4 unit-card">
+            <h4 class="unit-title"><i class="bi bi-cpu"></i> UNIT 1: DIGITAL DEVICES</h4>
 
-                <a href="unit_01.html" class="chapter-link">Chapter 1: Digital Devices </a>
-                <a href="#" class="chapter-link">Chapter 2: Software </a>
-                <a href="#" class="chapter-link">Chapter 3: Memory & Processors </a>
-            </div>
+            <a href="unit_01.html" class="chapter-link">
+                Chapter 1: Digital Devices <i class="bi bi-arrow-right-circle"></i>
+            </a>
+            <a href="#" class="chapter-link">
+                Chapter 2: Software <i class="bi bi-arrow-right-circle"></i>
+            </a>
+            <a href="#" class="chapter-link">
+                Chapter 3: Memory & Processors <i class="bi bi-arrow-right-circle"></i>
+            </a>
         </div>
+    </div>
 
-        <!-- UNIT 2 -->
-        <div class="col-md-6">
-            <div class="card shadow p-4 unit-card">
-                <h4><i class="bi bi-wifi"></i> UNIT 2: CONNECTIVITY</h4>
+    <!-- UNIT 2 -->
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4 unit-card">
+            <h4 class="unit-title"><i class="bi bi-wifi"></i> UNIT 2: CONNECTIVITY</h4>
 
-                <a href="#" class="chapter-link">Chapter 4: Digital Communication </a>
-                <a href="#" class="chapter-link">Chapter 5: Networks </a>
-            </div>
+            <a href="#" class="chapter-link">
+                Chapter 4: Digital Communication <i class="bi bi-arrow-right-circle"></i>
+            </a>
+            <a href="#" class="chapter-link">
+                Chapter 5: Networks <i class="bi bi-arrow-right-circle"></i>
+            </a>
         </div>
+    </div>
 
-        <!-- UNIT 3 -->
-        <div class="col-md-6">
-            <div class="card shadow p-4 unit-card">
-                <h4><i class="bi bi-globe"></i> UNIT 3: OPERATING ONLINE</h4>
+    <!-- UNIT 3 -->
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4 unit-card">
+            <h4 class="unit-title"><i class="bi bi-globe"></i> UNIT 3: OPERATING ONLINE</h4>
 
-                <a href="#" class="chapter-link">Chapter 6: Risks to Data </a>
-                <a href="#" class="chapter-link">Chapter 7: Impact of Internet </a>
-                <a href="#" class="chapter-link">Chapter 8: Online Communities </a>
-                <a href="#" class="chapter-link">Chapter 9: Digital Technology Implications </a>
-                <a href="#" class="chapter-link">Chapter 10: Online Information </a>
-            </div>
+            <a href="#" class="chapter-link">Chapter 6: Risks to Data <i class="bi bi-arrow-right-circle"></i></a>
+            <a href="#" class="chapter-link">Chapter 7: Impact of Internet <i class="bi bi-arrow-right-circle"></i></a>
+            <a href="#" class="chapter-link">Chapter 8: Online Communities <i class="bi bi-arrow-right-circle"></i></a>
+            <a href="#" class="chapter-link">Chapter 9: Digital Technology <i class="bi bi-arrow-right-circle"></i></a>
+            <a href="#" class="chapter-link">Chapter 10: Online Information <i class="bi bi-arrow-right-circle"></i></a>
         </div>
+    </div>
 
-        <!-- UNIT 4 -->
-        <div class="col-md-6">
-            <div class="card shadow p-4 unit-card">
-                <h4><i class="bi bi-cloud"></i> UNIT 4: ONLINE GOODS & SERVICES</h4>
+    <!-- UNIT 4 -->
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4 unit-card">
+            <h4 class="unit-title"><i class="bi bi-cloud"></i> UNIT 4: ONLINE GOODS & SERVICES</h4>
 
-                <a href="#" class="chapter-link">Chapter 11: Online Services </a>
-                <a href="#" class="chapter-link">Chapter 12: The Cloud </a>
-            </div>
+            <a href="#" class="chapter-link">Chapter 11: Online Services <i class="bi bi-arrow-right-circle"></i></a>
+            <a href="#" class="chapter-link">Chapter 12: The Cloud <i class="bi bi-arrow-right-circle"></i></a>
         </div>
-
     </div>
 
 </div>
+```
 
-<!-- Footer -->
+</div>
+
+<!-- FOOTER -->
+
 <footer>
-    <p>Created by Tr Sun</p>
-    <small>Helping students learn and grow 🚀</small>
+    <p class="mb-1">Created by Tr. Sun</p>
+    <small>Making ICT learning fun 🚀</small>
 </footer>
 
 </body>
