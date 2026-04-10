@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Types of Peripheral Devices</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #0d6efd;
+    --secondary: #6610f2;
+    --accent: #00c6ff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #eef2ff, #f8fbff);
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(270deg, var(--primary), var(--secondary), var(--accent));
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* SECTION */
+.section {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: -50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* CARDS */
+.card-custom {
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.35s;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card-custom:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* BUTTON */
+.btn-primary {
+    border-radius: 30px;
+    padding: 8px 22px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.08);
+}
+
+/* HIGHLIGHT */
+.highlight {
+    background: #e9f2ff;
+    padding: 15px;
+    border-left: 5px solid var(--primary);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, var(--primary), #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.footer-divider {
+    width: 60px;
+    height: 4px;
+    background: white;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>🖥️ Types of Peripheral Devices</h1>
+    <p class="lead">IGCSE ICT - Chapter 1.4</p>
+    <p>Designed by <strong>Tr. Sun</strong></p>
+</section>
+
+<div class="container">
+
+    <div class="section" data-aos="fade-up">
+
+        <h2 class="mb-3">📌 Overview</h2>
+
+        <p>
+            Peripheral devices are devices that can be connected to a computer system such as a PC or tablet.
+            They extend the functionality of the computer.
+        </p>
+
+        <div class="highlight">
+            Peripherals can be connected internally or externally and are divided into three main types:
+        </div>
+
+        <!-- CARDS -->
+        <div class="row mt-4">
+
+            <!-- INPUT -->
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-custom">
+                    <h4>⌨️ Input Devices</h4>
+                    <p>Used to enter data into a computer.</p>
+                    <a href="input_devices.html" class="btn btn-primary">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- OUTPUT -->
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-custom">
+                    <h4>🖨️ Output Devices</h4>
+                    <p>Used to display or present data.</p>
+                    <a href="output_devices.html" class="btn btn-primary">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- STORAGE -->
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-custom">
+                    <h4>💾 Storage Devices</h4>
+                    <p>Used to store data permanently.</p>
+                    <a href="storage_devices.html" class="btn btn-primary">Learn More →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="highlight mt-4">
+            💡 <strong>Exam Tip:</strong><br>
+            Input → Enter data<br>
+            Output → Display data<br>
+            Storage → Save data
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <h4>Created by <strong>Tr. Sun</strong></h4>
+    <div class="footer-divider"></div>
+    <p>
+        Education is not just about exams — it is about building confidence, curiosity, and a love for learning.
+    </p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
