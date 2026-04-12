@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 7 - Wired & Wireless Communication</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body { background: #f4f6f9; }
+
+/* CARD DESIGN */
+.card {
+    max-width: 520px;
+    margin: 16px auto;
+    padding: 18px;
+    border-radius: 16px;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(90deg,#0d6efd,#4dabf7);
+}
+
+.card.blue::before { background: linear-gradient(90deg,#0d6efd,#4dabf7); }
+.card.green::before { background: linear-gradient(90deg,#198754,#51cf66); }
+.card.orange::before { background: linear-gradient(90deg,#fd7e14,#ffa94d); }
+.card.purple::before { background: linear-gradient(90deg,#6f42c1,#b197fc); }
+.card.red::before { background: linear-gradient(90deg,#dc3545,#ff6b6b); }
+
+.section-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.definition {
+    background: #e7f1ff;
+    padding: 10px;
+    border-left: 4px solid #0d6efd;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.exam-tip {
+    background: #fff3cd;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+ul { padding-left: 18px; }
+
+/* TABLE */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.table th:first-child,
+.table td:first-child {
+    text-align: left;
+    font-weight: 600;
+    background: #f1f3f5;
+}
+
+.btn {
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <span class="navbar-brand fw-bold">📘 IGCSE IAL IT</span>
+        <span class="text-white">Chapter 7</span>
+    </div>
+</nav>
+
+<div class="container my-3">
+
+<h2 class="text-center mb-4">🔌 Wired & Wireless Communication</h2>
+
+<!-- WIRED -->
+<div class="card blue">
+<h5 class="section-title">🔌 Wired Communication</h5>
+
+<ul>
+<li>Devices use cables to communicate</li>
+<li>Many types: USB, Ethernet</li>
+<li>Often faster and more stable</li>
+</ul>
+</div>
+
+<!-- TABLE 4.3 -->
+<div class="card blue">
+<h5 class="section-title">📊 Table 4.3: Wired Connections</h5>
+
+<table class="table table-bordered text-center mt-3">
+<thead>
+<tr>
+<th>Type</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB</td>
+<td>Connect peripherals, transfer data</td>
+</tr>
+<tr>
+<td>Ethernet</td>
+<td>Connect devices to networks</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- USB -->
+<div class="card green">
+<h5 class="section-title">🔗 USB</h5>
+
+<ul>
+<li>Common connection type</li>
+<li>Used for many devices</li>
+<li>New versions → faster speeds</li>
+</ul>
+</div>
+
+<!-- ETHERNET -->
+<div class="card purple">
+<h5 class="section-title">🌐 Ethernet</h5>
+
+<ul>
+<li>Used for wired networks</li>
+<li>Up to 100m cable length</li>
+<li>Speed improves with new versions</li>
+</ul>
+</div>
+
+<!-- WIRELESS -->
+<div class="card orange">
+<h5 class="section-title">📡 Wireless Communication</h5>
+
+<ul>
+<li>No cables required</li>
+<li>Many different technologies</li>
+</ul>
+
+<div class="exam-tip">
+👉 Wi-Fi ≠ Internet (Wi-Fi is just network connection)
+</div>
+</div>
+
+<!-- WIFI -->
+<div class="card blue">
+<h5 class="section-title">📶 1️⃣ Wi-Fi</h5>
+
+<ul>
+<li>Connects devices to networks</li>
+<li>Uses IEEE 802.11 standards</li>
+<li>New versions → faster + longer range</li>
+</ul>
+</div>
+
+<!-- BLUETOOTH -->
+<div class="card green">
+<h5 class="section-title">🔵 2️⃣ Bluetooth</h5>
+
+<ul>
+<li>Short range</li>
+<li>Lower data transfer than Wi-Fi</li>
+<li>Requires pairing</li>
+<li>Used for headphones, keyboards</li>
+</ul>
+</div>
+
+<!-- TABLE 4.4 -->
+<div class="card green">
+<h5 class="section-title">📊 Table 4.4: Wi-Fi vs Bluetooth</h5>
+
+<table class="table table-bordered text-center mt-3">
+<thead>
+<tr>
+<th></th>
+<th>Wi-Fi</th>
+<th>Bluetooth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td>Long</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Use</td>
+<td>Internet access</td>
+<td>Devices/peripherals</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- MOBILE -->
+<div class="card red">
+<h5 class="section-title">📱 3️⃣ 3G & 4G</h5>
+
+<ul>
+<li>Mobile broadband</li>
+<li>Used when Wi-Fi not available</li>
+<li>4G faster than 3G</li>
+</ul>
+</div>
+
+<!-- IR -->
+<div class="card">
+<h5 class="section-title">📡 4️⃣ Infra-red (IR)</h5>
+
+<ul>
+<li>Short range</li>
+<li>Needs line of sight</li>
+<li>Used in remote controls</li>
+</ul>
+</div>
+
+<!-- NFC -->
+<div class="card purple">
+<h5 class="section-title">💳 5️⃣ NFC</h5>
+
+<ul>
+<li>Very short range</li>
+<li>Used for payments and travel cards</li>
+<li>Uses RFID chips</li>
+</ul>
+</div>
+
+</div>
+
+<!-- NAV -->
+<div class="container text-center my-4">
+<a href="#" class="btn btn-outline-secondary me-2 px-4">⬅ Previous</a>
+<a href="#" class="btn btn-primary px-4">Next ➡</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+Developed by <strong>Tr. Sun</strong> | Designed for Exam Success 🚀
+</footer>
+
+</body>
+</html>
