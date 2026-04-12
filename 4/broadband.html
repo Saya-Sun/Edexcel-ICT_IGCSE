@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 4 - Broadband & Cellular Networks</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body { background: #f4f6f9; }
+
+/* CARD */
+.card {
+    max-width: 520px;
+    margin: 16px auto;
+    padding: 18px;
+    border-radius: 16px;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    transition: 0.25s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* COLOR BAR */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(90deg,#0d6efd,#4dabf7);
+}
+
+/* COLORS */
+.card.blue::before { background: linear-gradient(90deg,#0d6efd,#4dabf7); }
+.card.green::before { background: linear-gradient(90deg,#198754,#51cf66); }
+.card.orange::before { background: linear-gradient(90deg,#fd7e14,#ffa94d); }
+.card.purple::before { background: linear-gradient(90deg,#6f42c1,#b197fc); }
+.card.red::before { background: linear-gradient(90deg,#dc3545,#ff6b6b); }
+
+.section-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.definition {
+    background: #e7f1ff;
+    padding: 10px;
+    border-left: 4px solid #0d6efd;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.exam-tip {
+    background: #fff3cd;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+ul { padding-left: 18px; }
+
+.btn {
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <span class="navbar-brand fw-bold">📘 IGCSE IAL IT</span>
+        <span class="text-white">Chapter 4</span>
+    </div>
+</nav>
+
+<div class="container my-3">
+
+<h2 class="text-center mb-4">🌐 Broadband & Cellular Networks</h2>
+
+<!-- BROADBAND -->
+<div class="card blue">
+    <h5 class="section-title">🌐 Broadband</h5>
+
+    <div class="definition">
+        Broadband is a high-speed internet connection provided through an Internet Service Provider (ISP).
+    </div>
+
+    <ul>
+        <li>Uses <strong>fibre optic cables</strong> (light signals)</li>
+        <li>Or <strong>copper cables</strong> (electrical signals)</li>
+        <li>Always-on connection (no need to reconnect)</li>
+        <li>High bandwidth → fast downloads and streaming</li>
+    </ul>
+
+    <div class="exam-tip">
+        👉 Fibre optic is faster and more reliable than copper
+    </div>
+</div>
+
+<!-- MOBILE BROADBAND -->
+<div class="card green">
+    <h5 class="section-title">📱 Mobile Broadband (3G / 4G)</h5>
+
+    <div class="definition">
+        Wireless internet connection using mobile phone networks.
+    </div>
+
+    <ul>
+        <li>No cables required → portable</li>
+        <li>Uses 3G, 4G (and newer 5G)</li>
+        <li>Useful when Wi-Fi is unavailable</li>
+        <li>Speed depends on signal strength and location</li>
+    </ul>
+
+    <div class="exam-tip">
+        👉 Mobile network acts as the ISP
+    </div>
+</div>
+
+<!-- CELLULAR -->
+<div class="card purple">
+    <h5 class="section-title">📡 Cellular Networks</h5>
+
+    <div class="definition">
+        A cellular network is another name for a mobile phone network.
+    </div>
+
+    <ul>
+        <li>Area divided into <strong>cells</strong></li>
+        <li>Each cell has a <strong>base station (tower)</strong></li>
+        <li>Devices connect to nearest tower</li>
+        <li>Automatically switches cells when moving</li>
+    </ul>
+
+    <div class="exam-tip">
+        👉 Enables continuous connection while travelling
+    </div>
+</div>
+
+<!-- ADVANTAGES -->
+<div class="card orange">
+    <h5 class="section-title">⚖️ Advantages & Limitations</h5>
+
+    <ul>
+        <li><strong>Broadband:</strong> fast, stable, high bandwidth</li>
+        <li><strong>Mobile:</strong> portable, flexible</li>
+        <li><strong>Limitation:</strong> mobile depends on coverage</li>
+        <li><strong>Limitation:</strong> slower than wired broadband</li>
+    </ul>
+</div>
+
+<!-- DEFINITIONS -->
+<div class="card">
+    <h5 class="section-title">📘 Key Definitions</h5>
+
+    <ul>
+        <li><strong>ISP:</strong> company providing internet access</li>
+        <li><strong>Fibre optic:</strong> transmits data using light</li>
+        <li><strong>Copper cable:</strong> transmits data using electricity</li>
+    </ul>
+</div>
+
+<!-- HEALTH -->
+<div class="card red">
+    <h5 class="section-title">💡 Health & Safety</h5>
+
+    <ul>
+        <li>WHO: no proven health risks from wireless signals</li>
+        <li>Long-term effects still under research</li>
+        <li>Children may be more vulnerable</li>
+    </ul>
+
+    <div class="definition">
+        Wi-Fi wavelength is much longer than visible light → generally considered safe
+    </div>
+</div>
+
+</div>
+
+<!-- NAV -->
+<div class="container text-center my-4">
+    <a href="chapter3.html" class="btn btn-outline-secondary me-2 px-4">
+        ⬅ Previous Chapter
+    </a>
+
+    <a href="chapter5.html" class="btn btn-primary px-4">
+        Next Chapter ➡
+    </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+Developed by <strong>Tr. Sun</strong> | Designed for Exam Success 🚀
+</footer>
+
+</body>
+</html>
