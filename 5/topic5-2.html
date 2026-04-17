@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Components of Wired & Wireless Systems</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #d6d6d6;
+}
+
+.navbar {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.section {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section h3 {
+    color: #1e6bd6;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #1e6bd6;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card h4 {
+    color: #1e6bd6;
+}
+
+.highlight {
+    background: #dbe8ff;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.tip {
+    background: #ffe6a7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand">📘 IGCSE IT</span>
+    <div>
+        <a class="navbar-brand" href="../index.html">🏠 Home</a>
+        <a class="navbar-brand" href="../unit_05.html">📂 Topic</a>
+    </div>
+</nav>
+
+<div class="container">
+
+<!-- TITLE -->
+<div class="main-title">🔌 Components of Wired & Wireless Systems</div>
+
+<!-- INTRO -->
+<div class="section">
+    <h3>📌 Overview</h3>
+    <p>Wired and wireless systems are made up of different components that allow devices to communicate and share data.</p>
+</div>
+
+<!-- CABLE -->
+<div class="card">
+    <div class="number">1</div>
+    <h4>🔗 Cable</h4>
+    <div class="highlight">Connects devices in a wired network</div>
+
+    <ul>
+        <li><strong>Cat5e:</strong> 10 / 100 / 1000 Mbit/s</li>
+        <li><strong>Cat6:</strong> up to 10 Gbit/s (faster, more expensive)</li>
+        <li>Connects devices via NIC</li>
+    </ul>
+
+    <p><strong>Fibre Optic:</strong> Uses light signals, up to 40 Gbit/s over long distances.</p>
+
+    <div class="tip">
+        💡 Exam Tip: Network speed = slowest component
+    </div>
+</div>
+
+<!-- SWITCH -->
+<div class="card">
+    <div class="number">2</div>
+    <h4>🔀 Switch</h4>
+    <div class="highlight">Connects devices and directs data</div>
+
+    <p>
+        A switch ensures data reaches the correct device using IP addresses.
+    </p>
+
+    <div class="tip">
+        💡 Exam Tip: Switch = sends data to correct device
+    </div>
+</div>
+
+<!-- GATEWAY -->
+<div class="card">
+    <div class="number">3</div>
+    <h4>🌐 Gateway</h4>
+    <div class="highlight">Connects different networks</div>
+
+    <p>Example: connects a LAN to a WAN.</p>
+</div>
+
+<!-- ROUTER -->
+<div class="card">
+    <div class="number">4</div>
+    <h4>📡 Router</h4>
+    <div class="highlight">Finds best path for data</div>
+
+    <ul>
+        <li>Stores device addresses</li>
+        <li>Routes data efficiently</li>
+        <li>Often includes switch + Wi-Fi</li>
+        <li>Connects LAN to internet</li>
+    </ul>
+
+    <div class="tip">
+        💡 Exam Tip: Router = connects to internet + routes data
+    </div>
+</div>
+
+<!-- BOOSTER -->
+<div class="card">
+    <div class="number">5</div>
+    <h4>📶 Booster</h4>
+    <div class="highlight">Extends network range</div>
+
+    <ul>
+        <li>Amplifies signals</li>
+        <li>Used for Wi-Fi and wired networks</li>
+        <li>Wireless access points can act as repeaters</li>
+    </ul>
+</div>
+
+<!-- SERVER -->
+<div class="card">
+    <div class="number">6</div>
+    <h4>🖥️ Server</h4>
+    
+    <div class="highlight">Shares resources with clients</div>
+
+    <p>Servers provide shared resources like storage, printers, and applications.</p>
+
+    <!-- SERVER TYPES -->
+    <div class="card">
+        
+        <h4>🔐 Authentication Server</h4>
+        <p>Checks usernames and passwords and provides access permissions.</p>
+    </div>
+
+    <div class="card">
+        <h4>🖨️ Print Server</h4>
+        <p>Manages printers and queues print jobs.</p>
+    </div>
+
+    <div class="card">
+        <h4>📂 File Server</h4>
+        <p>Provides shared storage for users.</p>
+    </div>
+
+    <div class="card">
+        <h4>⚙️ Application Server</h4>
+        <p>Runs applications for users over the network.</p>
+    </div>
+
+    <div class="card">
+        <h4>🌍 Web Server</h4>
+        <p>Handles HTTP requests and delivers web pages.</p>
+
+        <div class="tip">
+            💡 Exam Tip: Web server = stores websites
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-3">
+    <strong>Tr. Sun IT Learning Hub</strong><br>
+    <small>Designed for Exam Success 🚀</small>
+</footer>
+
+</body>
+</html>

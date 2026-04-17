@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Network Types</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #d6d6d6;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .section {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h3 {
+            color: #1e6bd6;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        .highlight {
+            background: #dbe8ff;
+            padding: 6px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-brand">📘 IGCSE IT</span>
+        <div>
+            <a class="navbar-brand" href="../index.html">🏠 Home</a>
+            <a class="navbar-brand" href="../unit_05.html">📂 Topic</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- TITLE -->
+        <div class="main-title">🏠 Local Area Networks (LANs)</div>
+
+        <!-- INTRO -->
+        <div class="section">
+            <h3>📌 What is a LAN?</h3>
+            <p>
+                A Local Area Network (LAN) is a network within a small area such as a home, school, or office.
+            </p>
+        </div>
+
+        <!-- TYPES -->
+        <div class="section">
+            <h3>🔗 Network Models</h3>
+            <p>Devices in a LAN can be connected using two models:</p>
+            <ul>
+                <li>Peer-to-peer</li>
+                <li>Client-server</li>
+            </ul>
+        </div>
+
+        <!-- PEER TO PEER -->
+        <div class="card">
+            <div class="number">1</div>
+            <h4>🤝 Peer-to-Peer Network</h4>
+            <div class="highlight">Devices share resources directly</div>
+
+            <p>
+                Computers share files and resources with each other without using a central server.
+            </p>
+
+            <div class="tip">
+                💡 Exam Tip: No server used
+            </div>
+        </div>
+
+        <!-- CLIENT SERVER -->
+        <div class="card">
+            <div class="number">2</div>
+            <h4>🖥️ Client-Server Network</h4>
+            <div class="highlight">Uses servers to manage resources</div>
+
+            <p>
+                A central server provides services and resources to client computers.
+            </p>
+
+            <div class="tip">
+                💡 Exam Tip: Server controls the network
+            </div>
+        </div>
+
+        <!-- BENEFITS OF LAN -->
+        <div class="card">
+            <h3>✅ Benefits of LANs</h3>
+
+            <div class="card">
+                <div class="number">1</div>
+                <h4>🖨️ Shared Peripherals</h4>
+                <div class="highlight">Use devices like printers</div>
+                <p>Multiple users can access printers and other hardware devices.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">2</div>
+                <h4>📂 Shared Storage & Data</h4>
+                <div class="highlight">Access common files</div>
+                <p>Users can store and access data from shared locations.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">3</div>
+                <h4>🔄 Flexible Access</h4>
+                <div class="highlight">Use any connected device</div>
+                <p>Access resources from different computers on the network.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">4</div>
+                <h4>🎬 Media Streaming</h4>
+                <div class="highlight">Stream content easily</div>
+                <p>Watch videos, listen to music, and play games across devices.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">5</div>
+                <h4>💬 Communication</h4>
+                <div class="highlight">Send messages & files</div>
+                <p>Users can share files and communicate within the network.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">6</div>
+                <h4>🌐 Shared Internet Access</h4>
+                <div class="highlight">One connection for all</div>
+                <p>All devices can use a single internet connection.</p>
+
+                <div class="tip">
+                    💡 Exam Tip: LAN = sharing resources + communication
+                </div>
+            </div>
+        </div>
+
+        <!-- LAN PARTY CARD -->
+
+        <div class="card">
+            <div class="number">9</div>
+            <h4>🎮 LAN Party</h4>
+            <div class="highlight">Local multiplayer gaming event</div>
+
+            <p>
+                A LAN party is when people connect their computers or consoles on a local area network to play multiplayer games together.
+            </p>
+
+            <ul>
+                <li>Devices are in the same location</li>
+                <li>Connected using a LAN (not internet)</li>
+                <li>Used for multiplayer gaming</li>
+                <li>Fast and low delay (low latency)</li>
+            </ul>
+
+            <div class="tip">
+                💡 Exam Tip: LAN party = local gaming without internet
+            </div>
+        </div>
+
+        
+
+        <!-- CLIENT SERVER BENEFITS -->
+        <div class="card">
+            <h4>⭐ Benefits of Client-Server Networks</h4>
+            <p></p>
+            <div class="card">
+                <div class="number">1</div>
+                <h4>🔐 Access Control</h4>
+                <p>Users can be given or restricted access to resources.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">2</div>
+                <h4>🧑‍💼 Centralised Administration</h4>
+                <p>Network is managed by administrators to prevent issues.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">3</div>
+                <h4>💾 Centralised Backup</h4>
+                <p>Automatic backups protect user data.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">4</div>
+                <h4>⚙️ Shared Software</h4>
+                <p>Applications can be accessed from servers.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">5</div>
+                <h4>📂 Shared Storage</h4>
+                <p>Files can be shared with controlled permissions.</p>
+            </div>
+
+            <div class="card">
+                <div class="number">6</div>
+                <h4>🌍 Roaming Profiles</h4>
+                <p>
+                    Users can log in on any computer and access their files and settings.
+                </p>
+
+                <div class="tip">
+                    💡 Exam Tip: Same files on any computer
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3 mt-3">
+        <strong>Tr. Sun IT Learning Hub</strong><br>
+        <small>Designed for Exam Success 🚀</small>
+    </footer>
+
+</body>
+
+</html>
